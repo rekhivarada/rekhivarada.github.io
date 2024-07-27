@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varada's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/vrlogo1.png" type="image/png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Varada Rekhi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#Technology">Technology</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Varada Rekhi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Technology">Technology</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic3.png" alt="Varada Rekhi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Varada Rekhi</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/varada-rekhi-544a06191/'" />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic3.jpeg"
+            alt="Profile picture"
+            class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />Software Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon" />
+              <h3>Education</h3>
+              <p>Bachelor's Degree in</br>Computer Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Welcome to my portfolio! I'm a passionate Software Engineer with a knack for solving complex 
+              problems and a love for exploring new places. With a Bachelor’s in Computer Engineering 
+              from Amrutvahini College of Engineering, I bring a strong foundation in Object-Oriented 
+              Programming, Algorithms, and Data Science. Currently, I'm honing my skills at Capgemini 
+              Engineering in Pune, where I've developed innovative solutions for Canon Medical Systems 
+              Corporation and engineered tools to automate processes and enhance efficiency.
+              <br/>
+              <br/>
+              Beyond my professional endeavors, I have a rich history of leadership and cultural involvement,
+               including participating in a Guinness World Record and leading cultural initiatives in my 
+               department. Join me as I continue my journey of innovation, travel, and tackling challenges 
+               head-on.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'" /> -->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Professional Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              Software Engineer
+            </h2> 
+            <h4>Capgemini Engineering - Pune, India</h4>
+            <h5 style="margin-top: 7px;">October 2022 - Present</h5>
+            <div class="article-container ">
+              <hr style="width:75%;text-align:center;margin-top:10px;">
+              <li>Streamlined installation processes, saving significant time and improving efficiency.</li>
+              <li>Improved system interoperability and performance through effective API development.</li>
+              <li>Leveraged cloud technologies and data analytics tools to drive better decision-making.</li>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Intern Trainee</h2>
+            <h4>Capgemini Technologies India - Pune, India</h4>
+            <h5 style="margin-top: 7px;">February 2022 - May 2022</h5>
+            <div class="article-container">
+              <hr style="width:75%;text-align:center;margin-top:10px;">
+              <li> Successfully streamlined the event management process, reducing event planning time by 50%.</li>
+              <li>Enhanced application performance and reliability through efficient use of cloud technologies and frameworks.</li>
+              <li>Demonstrated strong problem-solving skills and the ability to work independently in a remote setting.</li>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'" /> -->
+    </section>
+    
+    <section id="Technology">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Tech Knowledge</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Languages & Databases</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/cpp.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>C/C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/csharp.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>C#</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>HTML/CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sql.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/r.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>R Language</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysqlserver.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MS SQL Server</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysql.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongo.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/firebase.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Firebase</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks/Libraries</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/grpc.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>gRPC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/asp.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>ASP.NET</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Entity Framework</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mfc.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MFC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>ReactJS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/flask.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Flask</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/pandas.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Pandas</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/numpy.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>NumPy</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/matplotlib.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Matplotlib</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/tensor.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>TensorFlow</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/scikit-learn.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>scikit-learn</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Familiar with</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/azure.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Microsoft Azure</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>ODBC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MVC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/svn.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>SVN</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/kanban.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Kanban</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/powerbi.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Power BI</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/api.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Rest API</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/docker.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/script.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Shell Scripting</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/android.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Android Studio</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/postman.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Postman</h3>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/redmine.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>redmine</h3>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.jpg"
+                alt="Project 1"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Smart tourist scheduler</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+            <div>
+              <br/>
+              <li>
+                Created a dynamic scheduling system that cut manual planning time by 40% and optimized user experience.
+              </li>
+              <li>
+                Facilitated seamless travel planning by integrating booking and navigation features, supporting over 100 service providers.
+              </li>
+
+            </div>  
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.jpg"
+                alt="Project 2"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">AgroTech – Farmer’s Buddy</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'">
+                Live Demo
+              </button>
+            </div>
+            <div>
+              <br/>
+              <li>
+                Enhanced decision-making with real-time crop & price recommendations, leveraging machine learning & weather data.
+              </li> 
+              <li>
+                Simplified complex market data into easy-to-understand insights and actionable recommendations.
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'" /> -->
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon" />
+          <p><a href="mailto:rekhivarada@gmail.com">Mail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/varada-rekhi-544a06191/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Technology">Technology</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Made by Varada Rekhi with 	&#9829;</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
