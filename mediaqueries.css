@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) and (orientation: portrait) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -12,12 +12,12 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (orientation: portrait) {
   #desktop-nav {
     display: none;
   }
   #profile {
-    height: 50vh;
+    height: 0vh;
     margin-bottom: 0;
   }
 
@@ -52,7 +52,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (orientation: portrait) {
   #contact,
   footer {
     height: 40vh;
@@ -107,13 +107,20 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 720px) {
+  #profile {
+    height: 70vh;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 420px) and (orientation: portrait) {
   #contact,
   footer {
     height: 40vh;
   }
   #profile {
-    height: 70vh;
+    height: 55vh;
     margin-bottom: 0;
   }
   article {
@@ -162,60 +169,14 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  #profile {
-    height: 50vh;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #profile {
-    height: 60vh;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  #profile {
-    height: 60vh;
-    margin-bottom: 0;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  #profile {
-    height: 60vh;
-    margin-bottom: 0;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  .section__pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  #profile {
-    height: 60vh;
-    margin-bottom: 0;
-  }
-}
-
 @media screen and (max-width: 380px) {
+  #profile {
+    height: 70vh;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
   #profile {
     height: 70vh;
     margin-bottom: 0;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, orientation=portrait">
     <title>Varada's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -50,7 +50,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')">
+            onclick="location.href='https://drive.google.com/file/d/1eXtI52SqAfDfNCe5s06YnxHpmmdRtrot'">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -67,7 +67,7 @@
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'" />
+            onclick="location.href='https://github.com/rekhivarada'" />
         </div>
       </div>
     </section>
@@ -104,14 +104,14 @@
             <p>
               Welcome to my portfolio! I'm a passionate Software Engineer with a knack for solving complex 
               problems and a love for exploring new places. With a Bachelor’s in Computer Engineering 
-              from Amrutvahini College of Engineering, I bring a strong foundation in Object-Oriented 
-              Programming, Algorithms, and Data Science. Currently, I'm honing my skills at Capgemini 
-              Engineering in Pune, where I've developed innovative solutions for Canon Medical Systems 
+              from <b>Amrutvahini College of Engineering</b>, I bring a strong foundation in Object-Oriented 
+              Programming, Algorithms, and Data Science. Currently, I'm honing my skills at <b>Capgemini 
+              Engineering</b> in Pune, where I've developed innovative solutions for <b>Canon Medical Systems</b> 
               Corporation and engineered tools to automate processes and enhance efficiency.
               <br/>
               <br/>
               Beyond my professional endeavors, I have a rich history of leadership and cultural involvement,
-               including participating in a Guinness World Record and leading cultural initiatives in my 
+               including participating in a <b>Guinness World Record </b> and leading cultural initiatives in my 
                department. Join me as I continue my journey of innovation, travel, and tackling challenges 
                head-on.
             </p>
@@ -137,20 +137,22 @@
             <h5 style="margin-top: 7px;">October 2022 - Present</h5>
             <div class="article-container ">
               <hr style="width:75%;text-align:center;margin-top:10px;">
-              <li>Streamlined installation processes, saving significant time and improving efficiency.</li>
-              <li>Improved system interoperability and performance through effective API development.</li>
-              <li>Leveraged cloud technologies and data analytics tools to drive better decision-making.</li>
+              <li>Worked with Canon Medical Systems Corporation, a top MRI manufacturer, to create innovative solutions</li>
+              <li>Designed an internal tool that automated the installation of MRI SDKs, cutting setup time by 80%</li>
+              <li>Developed communication protocols for connecting desktop and tablet MRI applications, using gRPC to create APIs</li>
+              <li>Utilized C++, Python, and MS SQL Server for robust software development and database management.</li>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Intern Trainee</h2>
-            <h4>Capgemini Technologies India - Pune, India</h4>
+            <h2 class="experience-sub-title">Software Engineer Intern</h2>
+            <h4>Capgemini Technologies - Pune, India</h4>
             <h5 style="margin-top: 7px;">February 2022 - May 2022</h5>
             <div class="article-container">
               <hr style="width:75%;text-align:center;margin-top:10px;">
-              <li> Successfully streamlined the event management process, reducing event planning time by 50%.</li>
-              <li>Enhanced application performance and reliability through efficient use of cloud technologies and frameworks.</li>
-              <li>Demonstrated strong problem-solving skills and the ability to work independently in a remote setting.</li>
+              <li>Developed a cloud-native web application using ASP.NET Core MVC and deployed it to Azure App Services.</li>
+              <li>Set up continuous integration and continuous deployment (CI/CD) with Azure DevOps</li>
+              <li>Used Azure SQL Database for structured data and Azure Blob Storage for unstructured data</li>
+              <li>To keep track of the application's performance and health, I utilized Azure Monitor and Azure Application Insights</li>
           </div>
           </div>
         </div>
@@ -499,11 +501,11 @@
           </div>
         </div>
       </div>
-      <img
+      <!-- <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#projects'" />
+        onclick="location.href='./#projects'" /> -->
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -517,26 +519,48 @@
                 alt="Project 1"
                 class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Smart tourist scheduler</h2>
+            <h2 class="experience-sub-title project-title">Smart Tourist Scheduler</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'">
+                onclick="location.href='https://github.com/rekhivarada/Smart-Tourist-Scheduler-Based-on-user-Interest'">
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'">
-                Live Demo
               </button>
             </div>
             <div>
               <br/>
-              <li>
-                Created a dynamic scheduling system that cut manual planning time by 40% and optimized user experience.
+              <li style="list-style-type: square;">
+                Engineered a real-time tourist scheduler, automating itinerary creation based on user preferences and available time
               </li>
-              <li>
-                Facilitated seamless travel planning by integrating booking and navigation features, supporting over 100 service providers.
+              <li style="list-style-type: square;">
+                Facilitated seamless travel planning by integrating booking and navigation features, supporting over 100 service providers
+              </li>
+
+            </div>  
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project3.jpg"
+                alt="Project 2"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">PlantIt - Event Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rekhivarada/Event_Management_System'">
+                Github
+              </button>
+            </div>
+            <div>
+              <br/>
+              <li style="list-style-type: square;">
+                Developed an application for managing the events and providing estimated cost and giving real-time notifications
+              </li>
+              <li style="list-style-type: square;">
+                Enhanced user engagement and ensured reliable performance by automating email interactions and deploying the app on a cloud platform
               </li>
 
             </div>  
@@ -545,29 +569,24 @@
             <div class="article-container">
               <img
                 src="./assets/project2.jpg"
-                alt="Project 2"
+                alt="Project 3"
                 class="project-img" />
             </div>
             <h2 class="experience-sub-title project-title">AgroTech – Farmer’s Buddy</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'">
+                onclick="location.href='https://github.com/rekhivarada/AgroTech_Framer_Buddy'">
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'">
-                Live Demo
               </button>
             </div>
             <div>
               <br/>
-              <li>
-                Enhanced decision-making with real-time crop & price recommendations, leveraging machine learning & weather data.
+              <li style="list-style-type: square;">
+                Enhanced decision-making with real-time crop & price recommendations, leveraging machine learning & weather data
               </li> 
-              <li>
-                Simplified complex market data into easy-to-understand insights and actionable recommendations.
+              <li style="list-style-type:square">
+                Simplified complex market data into easy-to-understand insights and actionable recommendations
               </li>
             </div>
           </div>
