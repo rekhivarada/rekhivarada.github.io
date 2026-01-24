@@ -1,148 +1,645 @@
+
+You said:
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Varada Rekhi | Software Engineer</title>
-  <link rel="icon" href="./assets/vrlogo1.png" type="image/png" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">Varada Rekhi</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#technology">Technology</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section id="profile">
-    <div class="profile-img">
-      <img src="./assets/ProfilePhoto.png" alt="Varada Rekhi" />
-    </div>
-    <div class="profile-text">
-      <p class="intro">Hello, I'm</p>
-      <h1>Varada Rekhi</h1>
-      <h3>Software Engineer</h3>
-
-      <div class="buttons">
-        <a class="btn primary" href="https://drive.google.com/file/d/1lCdMCz_8reR5Sp4I8ecqd9tWOa7oMk_-/view">Download CV</a>
-        <a class="btn secondary" href="#contact">Contact Info</a>
-      </div>
-
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/varada-rekhi-544a06191/">
-          <img src="./assets/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/rekhivarada">
-          <img src="./assets/github.png" alt="GitHub">
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <p class="section__text__p1">Get To Know More</p>
-    <h2 class="title">About Me</h2>
-
-    <div class="card">
-      <p>
-        I am a graduate student at The University of Texas at Dallas, pursuing a
-        Master’s in Information Technology and Management. I previously worked
-        as a Senior Software Engineer at Capgemini Engineering, developing
-        medical imaging software for Canon Medical Systems.
-        <br><br>
-        I am passionate about software development, cloud computing, and data
-        engineering, and I enjoy building scalable and impactful solutions.
-      </p>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h2 class="title">Professional Experience</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Senior Software Engineer</h3>
-        <p class="company">Capgemini Engineering | 2022 – 2025</p>
-        <ul>
-          <li>Developed MRI software solutions for Canon Medical Systems</li>
-          <li>Automated SDK installation reducing setup time by 80%</li>
-          <li>Built gRPC APIs using C++ and Python</li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varada's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/vrlogo1.png" type="image/png" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Varada Rekhi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#Technology">Technology</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-
-      <div class="card">
-        <h3>Software Engineer Intern</h3>
-        <p class="company">Capgemini Technologies | 2022</p>
-        <ul>
-          <li>Built cloud-native apps using ASP.NET Core</li>
-          <li>Implemented CI/CD pipelines with Azure DevOps</li>
-          <li>Monitored apps using Azure Application Insights</li>
-        </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Varada Rekhi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Technology">Technology</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- TECHNOLOGY -->
-  <section id="technology">
-    <p class="section__text__p1">Explore My</p>
-    <h2 class="title">Tech Stack</h2>
-
-    <div class="tech-grid">
-      <span>C++</span><span>C#</span><span>Python</span><span>JavaScript</span>
-      <span>SQL</span><span>MongoDB</span><span>React</span><span>Flask</span>
-      <span>Azure</span><span>Docker</span><span>Power BI</span>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h2 class="title">Projects</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Smart Tourist Scheduler</h3>
-        <p>Automated itinerary planning based on user preferences.</p>
-        <a href="https://github.com/rekhivarada/Smart-Tourist-Scheduler-Based-on-user-Interest">GitHub</a>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/ProfilePhoto.png" alt="Varada Rekhi profile picture" />
       </div>
-
-      <div class="card">
-        <h3>PlantIt – Event Management</h3>
-        <p>Event planning app with cost estimation and notifications.</p>
-        <a href="https://github.com/rekhivarada/Event_Management_System">GitHub</a>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Varada Rekhi</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='https://drive.google.com/file/d/1lCdMCz_8reR5Sp4I8ecqd9tWOa7oMk_-/view'">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/varada-rekhi-544a06191/'" />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/rekhivarada'" />
+        </div>
       </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <!-- <div class="section__pic-container">
+          <img
+            src="./assets/about-pic3.jpeg"
+            alt="Profile picture"
+            class="about-pic" />
+        </div> -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon" />
+              <h3>Experience</h3>
+              <p>2+ years <br />Software Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon" />
+              <h3>Education</h3>
+              <p>bachelor's degree in Computer Engineering</p>
+              <p>Master's degree in Information Technology and Management</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Welcome to my portfolio! I am a graduate student at The University of Texas at Dallas, 
+              currently pursuing my Master’s in Information Technology and Management. With a strong 
+              academic background in Computer Engineering and professional experience as a Senior 
+              Software Engineer at Capgemini Engineering, I have worked on developing and enhancing 
+              medical imaging software for Canon Medical Systems.
+              <br/>
+              <br/>
+              I am deeply interested in software development, cloud computing, data engineering, 
+              and data analysis. I enjoy solving complex problems, building scalable solutions, and 
+              leveraging data-driven insights to support business growth and innovation.
+              <br/>
+              <br/>
+              Beyond academics and work, I enjoy exploring new technologies and working on side 
+              projects that challenge me to grow as a developer. I am also passionate about 
+              contributing to the tech community and am always open to new ideas, learning 
+              opportunities, and collaborations.
+            </p>
 
-      <div class="card">
-        <h3>AgroTech – Farmer’s Buddy</h3>
-        <p>ML-based crop and price recommendation system.</p>
-        <a href="https://github.com/rekhivarada/AgroTech_Framer_Buddy">GitHub</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'" /> -->
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Professional Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">
+              Senior Software Engineer
+            </h2> 
+            <h4>Capgemini Engineering - Pune, India</h4>
+            <h5 style="margin-top: 7px;">October 2022 - June 2025</h5>
+            <div class="article-container ">
+              <hr style="width:75%;text-align:center;margin-top:10px;">
+              <li>Worked with Canon Medical Systems Corporation, a top MRI manufacturer, to create innovative solutions</li>
+              <li>Designed an internal tool that automated the installation of MRI SDKs, cutting setup time by 80%</li>
+              <li>Developed communication protocols for connecting desktop and tablet MRI applications, using gRPC to create APIs</li>
+              <li>Utilized C++, Python, and MS SQL Server for robust software development and database management.</li>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Engineer Intern</h2>
+            <h4>Capgemini Technologies - Pune, India</h4>
+            <h5 style="margin-top: 7px;">February 2022 - May 2022</h5>
+            <div class="article-container">
+              <hr style="width:75%;text-align:center;margin-top:10px;">
+              <li>Developed a cloud-native web application using ASP.NET Core MVC and deployed it to Azure App Services.</li>
+              <li>Set up continuous integration and continuous deployment (CI/CD) with Azure DevOps</li>
+              <li>Used Azure SQL Database for structured data and Azure Blob Storage for unstructured data</li>
+              <li>To keep track of the application's performance and health, I utilized Azure Monitor and Azure Application Insights</li>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'" /> -->
+    </section>
+    
+    <section id="Technology">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Tech Knowledge</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Languages & Databases</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/cpp.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>C/C++</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/csharp.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>C#</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/python.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Python</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/javascript.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>HTML/CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/sql.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>SQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/r.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>R Language</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysqlserver.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MS SQL Server</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mysql.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mongo.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MongoDB</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/firebase.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Firebase</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frameworks/Libraries</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/grpc.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>gRPC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/asp.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>ASP.NET</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Entity Framework</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/mfc.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MFC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/react.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>ReactJS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/flask.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Flask</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/pandas.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Pandas</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/numpy.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>NumPy</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/Matplotlib_2.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Matplotlib</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/tensor.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>TensorFlow</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/scikit-learn.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>scikit-learn</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Familiar with</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/azure.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Microsoft Azure</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>ODBC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>MVC</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/git.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/svn.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>SVN</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/kanban.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Kanban</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/powerbi.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Power BI</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/api.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Rest API</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/docker.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Docker</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/script.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Shell Scripting</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/android.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Android Studio</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/postman.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>Postman</h3>
+                </div>
+              </article>
+              <!-- <article>
+                <img
+                  src="./assets/redmine.png"
+                  alt="Experience icon"
+                  class="icon" />
+                <div>
+                  <h3>redmine</h3>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'" /> -->
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.jpg"
+                alt="Project 1"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Smart Tourist Scheduler</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rekhivarada/Smart-Tourist-Scheduler-Based-on-user-Interest'">
+                Github
+              </button>
+            </div>
+            <div>
+              <br/>
+              <li style="list-style-type: square;">
+                Engineered a real-time tourist scheduler, automating itinerary creation based on user preferences and available time
+              </li>
+              <li style="list-style-type: square;">
+                Facilitated seamless travel planning by integrating booking and navigation features, supporting over 100 service providers
+              </li>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2 class="title">Contact Me</h2>
-    <p>Email: <a href="mailto:rekhivarada@gmail.com">rekhivarada@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/varada-rekhi-544a06191/">Profile</a></p>
-  </section>
+            </div>  
+          </div>
 
-  <footer>
-    <p>© 2025 Varada Rekhi | Built with ❤️</p>
-  </footer>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project3.jpg"
+                alt="Project 2"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">PlantIt - Event Management System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rekhivarada/Event_Management_System'">
+                Github
+              </button>
+            </div>
+            <div>
+              <br/>
+              <li style="list-style-type: square;">
+                Developed an application for managing the events and providing estimated cost and giving real-time notifications
+              </li>
+              <li style="list-style-type: square;">
+                Enhanced user engagement and ensured reliable performance by automating email interactions and deploying the app on a cloud platform
+              </li>
 
-</body>
-</html>
+            </div>  
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.jpg"
+                alt="Project 3"
+                class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">AgroTech – Farmer’s Buddy</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rekhivarada/AgroTech_Framer_Buddy'">
+                Github
+              </button>
+            </div>
+            <div>
+              <br/>
+              <li style="list-style-type: square;">
+                Enhanced decision-making with real-time crop & price recommendations, leveraging machine learning & weather data
+              </li> 
+              <li style="list-style-type:square">
+                Simplified complex market data into easy-to-understand insights and actionable recommendations
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'" /> -->
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon" />
+          <p><a href="mailto:rekhivarada@gmail.com">Mail</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/varada-rekhi-544a06191/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Technology">Technology</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Made by Varada Rekhi with 	&#9829;</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html> /* GENERAL */
